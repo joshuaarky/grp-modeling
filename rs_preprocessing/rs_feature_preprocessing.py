@@ -1,6 +1,3 @@
-# this is a combined version of 'df_merge.py', 'var_corr_analysis.py', 'merge_WB_GDPpc.py', 'merge_WB_GDPpc_lcu.py',
-# and pieces of 'analysis.py' from the geopy project using L2020 data
-
 #######################################################################################
 ### Step 1: create 'merged_data_outer.csv' and 'merged_data_inner.csv' ################
 #######################################################################################
