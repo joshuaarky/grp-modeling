@@ -1,3 +1,7 @@
+# Run this script after running all other preprocessing scripts
+# Assumes feature CSVs have already been created
+# Assumes DOSE V2.11 and Zhang et al. (2024) NTL dataset have been downloaded
+
 #######################################################################################
 ### Step 1: create 'merged_data_outer.csv' and 'merged_data_inner.csv' ################
 #######################################################################################
@@ -95,7 +99,7 @@ land_cover = pd.read_csv("/p/projects/impactee/Josh/geo_variables/land_cover/lc2
 land_cover_old = pd.read_csv("/p/projects/impactee/Josh/geo_variables/land_cover/lc_class_shares.csv")
 
 rivers = pd.read_csv("/p/projects/impactee/Josh/geo_variables/rivers/major_river_dist_aggregated.csv")
-dose = pd.read_csv("/p/projects/impactee/DOSE_creation/DoseV2Corrections/DOSE_V2.10.csv")
+dose = pd.read_csv("/p/projects/impactee/DOSE_creation/DoseV2Corrections/DOSE_V2.11.csv")
 z2024 = pd.read_csv("/p/projects/impactee/Josh/Z2024/Z2024_grp_ntl.csv", dtype={1: str})
 z2024 = z2024[['GID_1', 'year', 'NTL_sum', 'lNTL_sum', 'laglNTL_sum']]
 
